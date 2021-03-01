@@ -33,3 +33,8 @@ class Tetris(T):
         self.play(action)
         
         return self.getState(), self.score, self.end
+    
+    def reset(self):
+        super().reset()
+        
+        return self.getState()
